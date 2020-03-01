@@ -100,10 +100,19 @@ def perceptron_single_step_update(
     # Your code here
     #raise NotImplementedError
     
-    initial = label*(np.dot(feature_vector, current_theta) + current_theta_0)
-    if initial <= 0:
-        current_theta += label*feature_vector
-        current_theta_0 += label
+    # initial = label*(np.dot(feature_vector, current_theta) + current_theta_0)
+    # if initial <= 0:
+    #     current_theta += label*feature_vector
+    #     current_theta_0 += label
+    # return (current_theta, current_theta_0)
+    eps = 1e-8
+    
+    agreement = float(label*(current_theta.dot(feature_vector) + current_theta_0))
+    
+    if abs(agreement) < eps or agreement < 0:   # 1st condition to check if = 0
+            current_theta = current_theta + label*feature_vector
+            current_theta_0 = current_theta_0 + label
+            
     return (current_theta, current_theta_0)
 #pragma: coderesponse end
 
@@ -298,7 +307,19 @@ def classify(feature_matrix, theta, theta_0):
     be considered a positive classification.
     """
     # Your code here
-    raise NotImplementedError
+    # result = np.ones([feature_matrix.shape[0],])
+    # for i in range(feature_matrix.shape[0]):
+    #     if((np.dot(feature_matrix[i],theta) + theta_0) <= 0):
+    #         result[i] = -1
+    # return result
+    eps = 1e-8
+    
+    predictions = theta.dot(feature_matrix.T) + theta_0
+    predictions[predictions > 0.0] = 1
+    predictions[predictions < 0.0] = -1
+    predictions[abs(predictions) < eps] = -1
+    
+    return predictions
 #pragma: coderesponse end
 
 
@@ -336,7 +357,20 @@ def classifier_accuracy(
     accuracy of the trained classifier on the validation data.
     """
     # Your code here
-    raise NotImplementedError
+    theta_classifier, theta_0_classifier  = 0,0
+    theta_valid, theta_0_valid = 0,0
+    
+    theta_classifier, theta_0_classifier = classifier(train_feature_matrix,train_labels, **kwargs)
+    class_predicted_labels = classify(train_feature_matrix, theta_classifier, theta_0_classifier)
+    
+    theta_valid, theta_0_valid = classifier(val_feature_matrix,val_labels, **kwargs)
+    val_predicted_labels = classify(val_feature_matrix, theta_valid, theta_0_valid)
+    
+    
+    classification_accuracy = accuracy(class_predicted_labels,train_labels)
+    validation_accuracy = accuracy(val_predicted_labels,val_labels)
+    
+    return (classification_accuracy,validation_accuracy)
 #pragma: coderesponse end
 
 
@@ -407,3 +441,6 @@ def accuracy(preds, targets):
     """
     return (preds == targets).mean()
 #pragma: coderesponse end
+
+
+
