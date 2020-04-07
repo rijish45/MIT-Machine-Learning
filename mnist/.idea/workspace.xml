@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0105de2-4392-48f1-81dd-fd1680458644" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/part1/features.py" beforeDir="false" afterPath="$PROJECT_DIR$/part1/features.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part1/kernel.py" beforeDir="false" afterPath="$PROJECT_DIR$/part1/kernel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part1/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/part1/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2-mnist/nnet_cnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/part2-mnist/nnet_cnn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2-nn/neural_nets.py" beforeDir="false" afterPath="$PROJECT_DIR$/part2-nn/neural_nets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2-twodigit/conv.py" beforeDir="false" afterPath="$PROJECT_DIR$/part2-twodigit/conv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2-twodigit/mlp.py" beforeDir="false" afterPath="$PROJECT_DIR$/part2-twodigit/mlp.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +18,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/part1/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
+            <state relative-caret-position="2430">
               <caret line="164" selection-start-line="164" selection-end-line="164" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
@@ -26,11 +27,56 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/part1/kernel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-74">
+            <state relative-caret-position="15">
               <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/part2-twodigit/mlp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="22" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/part2-twodigit/conv.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="581">
+              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/part2-nn/neural_nets.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="104" selection-start-line="104" selection-end-line="104" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/part2-mnist/nnet_cnn.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="579">
+              <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -38,7 +84,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/part1/features.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
+            <state relative-caret-position="300">
               <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -91,6 +137,10 @@
         <option value="$PROJECT_DIR$/part1/features.py" />
         <option value="$PROJECT_DIR$/part1/main.py" />
         <option value="$PROJECT_DIR$/part1/kernel.py" />
+        <option value="$PROJECT_DIR$/part2-twodigit/mlp.py" />
+        <option value="$PROJECT_DIR$/part2-twodigit/conv.py" />
+        <option value="$PROJECT_DIR$/part2-nn/neural_nets.py" />
+        <option value="$PROJECT_DIR$/part2-mnist/nnet_cnn.py" />
       </list>
     </option>
   </component>
@@ -112,6 +162,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -122,13 +173,22 @@
             <path>
               <item name="mnist" type="b2602c69:ProjectViewProjectNode" />
               <item name="mnist" type="462c0819:PsiDirectoryNode" />
-              <item name="part1" type="462c0819:PsiDirectoryNode" />
+              <item name="part2-mnist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mnist" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mnist" type="462c0819:PsiDirectoryNode" />
+              <item name="part2-nn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mnist" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mnist" type="462c0819:PsiDirectoryNode" />
+              <item name="part2-twodigit" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -187,6 +247,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="815" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -227,6 +288,26 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/part1/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2430">
+          <caret line="164" selection-start-line="164" selection-end-line="164" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/part1/features.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/part1/softmax.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2085">
@@ -251,30 +332,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/part1/features.py">
+    <entry file="file://$PROJECT_DIR$/part1/kernel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/part2-twodigit/mlp.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="22" selection-end-column="40" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/part1/main.py">
+    <entry file="file://$PROJECT_DIR$/part2-twodigit/conv.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="164" selection-start-line="164" selection-end-line="164" />
+        <state relative-caret-position="581">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/part1/kernel.py">
+    <entry file="file://$PROJECT_DIR$/part2-nn/neural_nets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-74">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="400">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/part2-mnist/nnet_cnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
         </state>
       </provider>
     </entry>
